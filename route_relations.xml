@@ -1,0 +1,23 @@
+
+
+meta 
+{
+    title: "Route Relations";
+    description: "Highlight route relations";
+    version: "0.1_2019-11-22";
+    author: "mdroads";
+    min-josm-version: "5198";
+}
+
+
+relation[type=route][route=road] > way::relation_underlay
+ {z-index: -1;
+  width: 36;
+  color: blue;
+  opacity: 0.50;
+  linecap: none;
+  text-color: blue;
+  font-size: 24;
+  text: parent_tag(ref);
+  text-position: line;
+  text-offset-y: 24;}
