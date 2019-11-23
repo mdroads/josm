@@ -4,7 +4,7 @@ meta
 {
     title: "Route Ref Tags";
     description: "Highlight UNSIGNED ref tags";
-    version: "0.1_2019-11-22";
+    version: "0.2_2019-11-23";
     author: "mdroads";
     min-josm-version: "5198";
 }
@@ -13,10 +13,10 @@ meta
 way[highway][unsigned_ref]
  {z-index: -1;
   width: 36;
-  color: yellow;
+  color: green;
   opacity: 0.50;
   linecap: none;
-  text-color: yellow;
+  text-color: green;
   font-size: 24;
   text: parent_tag(ref);
   text-position: line;
