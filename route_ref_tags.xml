@@ -4,7 +4,7 @@ meta
 {
     title: "Route Ref Tags";
     description: "Highlight route ref tags";
-    version: "0.1_2019-11-22";
+    version: "0.2_2019-12-07";
     author: "mdroads";
     min-josm-version: "5198";
 }
@@ -18,6 +18,6 @@ way[highway][ref]
   linecap: none;
   text-color: yellow;
   font-size: 24;
-  text: parent_tag(ref);
+  text: tag(ref);
   text-position: line;
   text-offset-y: 24;}
