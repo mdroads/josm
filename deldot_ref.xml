@@ -1,0 +1,23 @@
+
+
+meta 
+{
+    title: "DelDot Ref Tags";
+    description: "Highlight Delaware reference ref tags";
+    version: "0.1_2020-11-20";
+    author: "mdroads";
+    min-josm-version: "5198";
+}
+
+
+way[highway][ref:deldot]
+ {z-index: -1;
+  width: 10;
+  color: cyan;
+  opacity: 0.50;
+  linecap: none;
+  text-color: cyan;
+  font-size: 16;
+  text: tag("ref:deldot");
+  text-position: line;
+  text-offset-y: 12;}
